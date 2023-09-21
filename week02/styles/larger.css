@@ -90,3 +90,21 @@ footer {
     font-size: small;
     color: #fdf9d8;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    background-color: #fdf9d8;
+    color: #841617;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: #841617;
+}
