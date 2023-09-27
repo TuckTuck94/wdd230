@@ -269,3 +269,10 @@ nav ul {
     padding: 0;
     /* Add more styles as needed */
 }
+
+main::before {
+    content: "🌟";
+    color: #FFD700;
+    font-size: 24px;
+    margin-right: 10px;
+}
