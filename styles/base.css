@@ -188,7 +188,7 @@ nav {
     right: 0px;
     margin: 0 auto;
     max-width: 760px;
-    background-color: #fdf9d8;
+    background-color: #841617;
 }
 
 nav a {
@@ -209,43 +209,21 @@ nav.open {
 }
 
 .menu {
-    list-style: none;
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    margin: 0 auto;
-    max-width: 760px;
+    display: none;
+}
+
+/* Add a rule to show the menu when the "open" class is applied */
+.menu.open {
+    display: block;
+}
+
+/* Add a rule to style the button */
+.mobile-menu-button {
+    display: block;
     background-color: #841617;
-}
-
-.menu a:hover,
-#hamburger:hover {
-    background-color: #841617;
-}
-
-.menu li {
-    text-decoration: none;
-    color: #fdf9d8;
-    border-bottom: 1px solid #841617;
-    transition: vertical 0.5s ease-in-out;
-    background-color: #841617;
-}
-
-#hamburger {
-    height: 48px;
-    width: 48px;
-    font-size: 2rem;
-    background-color: #841617;
-    margin-top: 5px;
-}
-
-#hamburger::before {
-    content: " ≡ ";
-    color: #fdf9d8
-}
-
-#hamburger.close::before {
-    content: " ❌ ";
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 footer {
@@ -274,6 +252,7 @@ footer a:hover {
     width: 48px;
     font-size: 2rem;
     background-color: #841617;
+    color: #fdf9d8;
     margin-top: 5px;
     display: none;
     /* Hide by default */

@@ -14,14 +14,32 @@ else {
 }
 
 //hamburger menu
-const mybtn = document.querySelector("button");
-const mynav = document.querySelector("nav");
+const mybtn = document.getElementById("hamburger");
+const mynav = document.querySelector(".menu");
 
-mybtn.addEventListener("click", () => {
+// Function to toggle the menu
+function toggleMenu() {
     mynav.classList.toggle("open");
     if (mynav.classList.contains("open")) {
         mybtn.textContent = '✕'; // Change to 'X' when open
     } else {
-        mybtn.textContent = '≡'; // Change back to hamburger symbol when closed
+        mybtn.textContent = '☰'; // Change back to hamburger symbol when closed
+    }
+}
+
+
+mybtn.addEventListener("click", toggleMenu);
+
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        mynav.classList.remove("open");
+        mybtn.textContent = '☰';
     }
 });
+
+if (window.innerWidth > 768) {
+    mybtn.textContent = '☰';
+} else {
+    mybtn.textContent = '☰';
+}
