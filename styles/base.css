@@ -276,3 +276,10 @@ main::before {
     font-size: 24px;
     margin-right: 10px;
 }
+
+iframe {
+    width: 95%;
+    height: calc(100% - 5em - 6em - 4em + 5px);
+    margin: 2em 0 2em auto;
+    position: relative;
+}
