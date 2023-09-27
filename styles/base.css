@@ -229,10 +229,10 @@ nav.open {
 footer {
     padding: 1em;
     display: grid;
-    position: 2em;
+    position: ;
     background-color: #841617;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 2em;
     text-align: center;
     border-radius: 5px;
     z-index: 15;
@@ -255,7 +255,7 @@ footer a:hover {
     font-size: 2rem;
     background-color: #841617;
     color: #fdf9d8;
-    margin-top: 6px;
+    margin-top: 5px;
     display: none;
     /* Hide by default */
 }
