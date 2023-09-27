@@ -35,13 +35,13 @@
 
     h1 {
         font-size: 40px;
-        color: #841617;
+        color: #fdf9d8;
         align-self: center;
     }
 
     header>img {
         width: 100%;
-        box-shadow: 1px 1px 10px #fdf9d8;
+        box-shadow: 1px 1px 10px black;
         border-radius: 5px;
     }
 
@@ -99,7 +99,7 @@
         text-shadow: 1px 1px 10px #841617;
     }
 
-    ======= {
+        {
         font-family: 'Arial';
     }
 
@@ -142,7 +142,7 @@
 
     header>img {
         width: 100%;
-        box-shadow: 1px 1px 10px #fdf9d8;
+        box-shadow: 1px 1px 10px black;
         border-radius: 5px;
     }
 
@@ -198,4 +198,21 @@
     footer a:hover {
         color: #fdf9d8;
         text-shadow: 1px 1px 10px #841617;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        text-align: center;
+        color: #841617;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: ghostwhite;
+        color: #841617;
     }

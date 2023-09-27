@@ -1,8 +1,21 @@
+/* Media query to show/hide the menu and button */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: block;
+        /* Show the menu on mobile */
+    }
+
+    #hamburger {
+        display: block;
+        /* Show the button on mobile */
+    }
+}
+
 h1 {
     justify-self: start;
 }
 
-@media screen and (max-width: 405px) {
+@media only screen and (max-width: 405px) {
     header {
         grid-template-columns: auto 54.8px;
     }

@@ -12,3 +12,16 @@ else {
     document.getElementById("modified").innerHTML = "Last Modified: " +
         temp + " am"
 }
+
+//hamburger menu
+const mybtn = document.querySelector("button");
+const mynav = document.querySelector("nav");
+
+mybtn.addEventListener("click", () => {
+    mynav.classList.toggle("open");
+    if (mynav.classList.contains("open")) {
+        mybtn.textContent = '✕'; // Change to 'X' when open
+    } else {
+        mybtn.textContent = '≡'; // Change back to hamburger symbol when closed
+    }
+});
