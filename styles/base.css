@@ -21,18 +21,6 @@
         background-color: #fdf9d8;
     }
 
-    header {
-        padding: 1em;
-        display: grid;
-        position: relative;
-        background-color: #841617;
-        grid-template-columns: auto 20%;
-        grid-template-rows: 5em;
-        justify-items: center;
-        border-radius: 5px;
-        z-index: 15;
-    }
-
     h1 {
         font-size: 40px;
         color: #fdf9d8;
@@ -215,4 +203,85 @@
     nav a:hover {
         background-color: ghostwhite;
         color: #841617;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Mobile View ***************/
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #841617;
+        color: #fdf9d8;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    nav {
+        background-color: #fdf9d8;
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #841617;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: #841617;
+        background-color: ghostwhite;
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+    @media only screen and (min-width: 40em) {
+        .navigation {
+            display: flex;
+        }
+
+        .navigation li {
+            display: block;
+            /* change state in small view */
+            flex: 1 1 100%;
+        }
+
+        .navigation a {
+            text-align: center;
+        }
+
+        #menu {
+            display: none;
+        }
     }
