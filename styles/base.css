@@ -157,7 +157,7 @@ navigation a:active {
     /* supposed to also highlight the active link that represents the active page - need to do something about this */
     color: #fdf9d8;
     background-color: gray;
-    /* Hover over tomato color */
+    /* Hover over gray color */
 }
 
 .show li {
