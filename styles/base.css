@@ -1,287 +1,178 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    background-color: gray;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-}
-
 body {
-    font-family: 'Arial';
-    border-radius: 5px;
-    min-height: 406px;
-    height: 70%;
-    width: 70%;
-    max-width: 700px;
-    background-color: #fdf9d8;
+    display: grid;
+    /*height: 100vh;*/
+    grid-template: auto auto 1fr auto / 10% 80% 10%;
+    margin: 0;
+    /*font-family: sans-serif;*/
+    font-family: "Arial";
 }
 
 header {
-    padding: 1em;
-    display: grid;
-    position: relative;
-    background-color: #841617;
-    grid-template-columns: auto 20%;
-    grid-template-rows: 5em;
-    justify-items: center;
-    border-radius: 5px;
-    z-index: 15;
-}
-
-h1 {
-    font-size: 40px;
+    background: #841617;
     color: #fdf9d8;
-    align-self: center;
-}
-
-header>img {
-    width: 100%;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 5px;
-}
-
-main {
-    width: 97%;
-    height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
-    position: relative;
-}
-
-h2 {
-    border-bottom: solid 1px #fdf9d8;
-    margin-bottom: 0;
-    width: 95%;
-}
-
-ul {
-    margin: 0;
-    padding-top: 10px;
-    width: calc(100% - 40px);
-    height: 94%;
-    overflow-y: auto;
-}
-
-ul li {
-    padding-bottom: 5px;
-}
-
-a {
-    color: #841617;
-}
-
-a:active {
-    color: #fdf9d8;
-}
-
-footer {
-    background-color: #841617;
-    position: relative;
-    color: #fdf9d8;
-    padding: 0.75em;
-    border-radius: 5px;
+    padding: 1rem;
+    grid-column: 1/4;
     text-align: center;
-    z-index: 10;
 }
 
-footer a {
-    text-decoration: underline #fdf9d8;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-
-footer a:hover {
-    color: #fdf9d8;
-    text-shadow: 1px 1px 10px #841617;
-}
-
-    {
-    font-family: 'Arial';
-}
-
-html {
-    background-color: darkgray;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
+header div {
+    /*display: flex;*/
+    display: block;
+    justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
-body {
-    border-radius: 5px;
-    border-color: #841617;
-    min-height: 406px;
-    height: 87%;
-    width: 100%;
-    max-width: 700px;
-    background-color: #fdf9d8;
+header div img {
+    height: auto;
+    max-width: 100%;
 }
 
-header {
-    padding: 1em;
-    display: grid;
-    position: relative;
-    background-color: #841617;
-    grid-template-columns: auto 20%;
-    grid-template-rows: 5em;
-    justify-items: center;
-    border-radius: 5px;
-    z-index: 15;
-}
-
-h1 {
-    font-size: 40px;
-    color: #fdf9d8;
-    align-self: center;
-}
-
-header>img {
-    width: 100%;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 5px;
+header div h1 {
+    padding: 1rem;
+    font-size: 3.5em;
 }
 
 main {
-    width: 95%;
-    height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
-    position: relative;
-}
-
-h2 {
-    border-bottom: solid 1px #fdf9d8;
-    margin-bottom: 0;
-    width: 95%;
-}
-
-ul {
-    margin: 0;
-    padding-top: 10px;
-    width: calc(100% - 40px);
-    height: 94%;
-    overflow-y: auto;
-}
-
-ul li {
-    padding-bottom: 5px;
-}
-
-a {
+    grid-column: 2/3;
+    background-color: ghostwhite;
     color: #841617;
+    padding: 1rem;
 }
 
-a:active {
-    color: #fdf9d8;
-}
-
-/*Navigation Menu*/
-nav {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 0px;
-    margin: 0 auto;
-    max-width: 760px;
-    background-color: #841617;
-}
-
-nav a {
-    display: block;
-    padding: 0.75rem 2rem;
+main h2 {
     text-align: center;
+    color: #841617;
+    padding-top: 2rem;
+    font-size: 2em;
+    font-family: "Arial";
+}
+
+main h3 {
+    background: #841617;
     color: #fdf9d8;
-    transition: 0.5s;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Arial";
 }
 
-nav ul {
-    margin: 0px;
-    padding: 0px;
+main ul li {
+    padding: .25rem;
+    list-style-type: none;
 }
 
-nav.open {
-    display: block;
+.card {
+    outline: 1px solid ghostwhite;
+    background-color: #fdf9d8;
+    border-radius: 5px;
+    /*padding: 3rem;*/
+    font-size: 1.5em;
 }
 
-.menu {
-    display: none;
-}
-
-/* Add a rule to show the menu when the "open" class is applied */
-.menu.open {
-    display: block;
-}
-
-/* Add a rule to style the button */
-.mobile-menu-button {
-    display: block;
-    background-color: #841617;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+.card div {
+    text-align: center;
+    padding: 1rem;
 }
 
 footer {
-    padding: 1em;
-    display: grid;
-    position: ;
-    background-color: #841617;
-    grid-template-columns: auto;
-    grid-template-rows: 2em;
+    grid-column: 1/4;
+    background: #841617;
+}
+
+footer p {
     text-align: center;
-    border-radius: 5px;
-    z-index: 15;
-}
-
-
-footer a {
-    text-decoration: underline #fdf9d8;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-
-footer a:hover {
+    font-size: 1.25em;
     color: #fdf9d8;
-    text-shadow: 1px 1px 10px #841617;
 }
 
-.mobile-menu-button {
-    height: 48px;
-    width: 48px;
+#lastModified {
+    color: #fdf9d8;
+}
+
+/* RESPONSIVE MENU */
+#menu {
+    grid-column: 1/-1;
+    /* make it extend the width of the screen instead of just filling the 1st column */
+    display: block;
+    /* makes the items (the hamburger) display in a block */
     font-size: 2rem;
-    background-color: #841617;
-    color: #fdf9d8;
-    margin-top: 5px;
-    display: none;
-    /* Hide by default */
+    font-weight: 700;
+    text-decoration: none;
+    /* Get rid of the 'underline' for the hyperlink */
+    padding: .5rem .75rem;
+    background-color: #fdf9d8;
+    /* give it a bit of grey background so it's clear the whole bar across teh screen could be clicked */
+    color: #841617;
+    /* black so the 'hyperlink' isn't blue */
 }
 
-/* Hide the navigation menu by default */
+#menu::before {
+    /* used to insert the hamburger menu icon.  #menu text is empty until this */
+    content: "≡";
+}
+
+#menu.show::before {
+    /* when toggled w/ js, it changes the content to an X icon. */
+    content: "✕";
+}
+
 nav {
-    display: none;
+    grid-column: 1/-1;
+    /* make sure the nav element stretches the width instead of just 1 column */
+    /* I don't know why it's needed to apply to nav but wont work for .navigation */
 }
 
-/* Style for the navigation menu */
-nav ul {
+.navigation {
+    background: #fdf9d8;
+    /* black background for when menu is shown */
     list-style: none;
+    margin: 0 auto;
     padding: 0;
-    /* Add more styles as needed */
 }
 
-main::before {
-    content: "🌟";
-    color: #FFD700;
-    font-size: 24px;
-    margin-right: 10px;
+.navigation li {
+    display: none;
+    /* hides the nav elements when js toggles it */
 }
 
-iframe {
-    width: 95%;
-    height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
-    position: relative;
+.navigation a {
+    color: #841617;
+    /* make sure the link text is white instead of blue default */
+    text-decoration: none;
+    /* gets rid of underlines and such for hyperlinks */
+    font-family: "Comfortaa", Helvetica, sans-serif;
+    display: block;
+    /* Displays the elements in a block */
+    padding: 0.75rem;
+    text-align: left;
+    /* forces text to left edge of screen */
+    transition: 0.5s;
+    /* Set the transition time for the hover */
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    /* set the font sizes */
 }
+
+.navigation a:hover,
+navigation a:active {
+    /* supposed to also highlight the active link that represents the active page - need to do something about this */
+    color: #fdf9d8;
+    background-color: gray;
+    /* Hover over tomato color */
+}
+
+.show li {
+    display: block;
+    /* displays the list when js toggles it */
+}
+
+.active::first-letter {
+    /* Using pseudo-element to apply an underline to the 1st letter of the active link */
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #841617;
+    /* highlight active link.  active is defined in html as a class for the defined anchor */
+}
+
+/* END RESPONSIVE MENU */

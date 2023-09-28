@@ -1,39 +1,54 @@
-/* Media query to show/hide the menu and button */
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 830px) {
+    header div {
+        display: flex;
+    }
+
+    header div img {
+        padding: 1rem;
+    }
+
     nav {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    nav a {
+        padding: 1rem;
+
+    }
+
+    main {
+        display: grid;
+        grid-template: auto 1fr / 2fr 1fr;
+        gap: 3rem;
+    }
+
+    main h2 {
+        grid-column: 1/ -1;
+        grid-row: 1;
+    }
+
+    .card {
+        grid-row: 2;
+    }
+
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
         display: block;
-        /* Show the menu on mobile */
+        flex: 1 1 100%;
     }
 
-    #hamburger {
-        display: block;
-        /* Show the button on mobile */
-    }
-}
-
-h1 {
-    justify-self: start;
-}
-
-@media only screen and (max-width: 405px) {
-    header {
-        grid-template-columns: auto 54.8px;
-    }
-
-    .brk2 {
-        display: block;
-    }
-
-    .unBrk2 {
-        display: none;
-    }
-
-    h2 {
+    .navigation a {
         text-align: center;
     }
 
-    ul {
-        padding-left: 20px;
-        height: 80%;
+    #menu {
+        display: none;
     }
+
 }

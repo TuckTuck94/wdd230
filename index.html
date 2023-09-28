@@ -26,9 +26,15 @@
 </head>
 
 <body>
-    <button id="hamburger" class="mobile-menu-button">☰</button>
-    <nav class="menu">
-        <ul>
+    </nav>
+    <header>
+        <h1>Michael Tucker</h1>
+        <img src="images/michael.png" alt="Photo of Michael">
+
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="chamber/siteplan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
@@ -38,18 +44,15 @@
                     100</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Michael Tucker</h1>
-        <img src="images/michael.png" alt="Photo of Michael">
-
-    </header>
+    </a>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
                 <li>Lesson 01:
-                    <a href="./week01/holygrail.html">Holy Grail</a>
+                    <a href="./week01/holygrail.html">Holy Grail</a> |
+                    <a href="https://codepen.io/tucktuck94/pen/rNoKOaE" target="_blank">JS Pen</a>
                 </li>
             </ul>
             <ul>
@@ -74,14 +77,18 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104267.98996639282!2d-97.44477044286818!3d35.24693322041535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b263b67f93eee7%3A0x445b233faba85cf8!2sNorman%2C%20OK!5e0!3m2!1sen!2sus!4v1695831181366!5m2!1sen!2sus"
                 allowfullscreen="" loading="lazy">
         </section>
+
+        </iframe>
+        </div>
     </main>
-    </iframe>
-    </div>
+    </main>
     <footer>
-        <p>©<span id="year"></span> Michael Tucker, Oklahoma, United States</p>
-        <p id="lastmodified"><span id="modified"></span></p>
-        <script src="scripts/scripts.js"></script>
+
+        <p>&copy;<span id="currentdate"></span>, Michael Tucker, Oklahoma, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/menu.js"></script>
 
 </html>
