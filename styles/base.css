@@ -1,9 +1,9 @@
 body {
     display: grid;
-    /*height: 100vh;*/
+
     grid-template: auto auto 1fr auto / 10% 80% 10%;
     margin: 0;
-    /*font-family: sans-serif;*/
+
     font-family: "Arial";
 }
 
@@ -16,7 +16,7 @@ header {
 }
 
 header div {
-    /*display: flex;*/
+
     display: block;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ main ul li {
     outline: 1px solid ghostwhite;
     background-color: #fdf9d8;
     border-radius: 5px;
-    /*padding: 3rem;*/
+
     font-size: 1.5em;
 }
 
@@ -92,39 +92,29 @@ footer p {
 /* RESPONSIVE MENU */
 #menu {
     grid-column: 1/-1;
-    /* make it extend the width of the screen instead of just filling the 1st column */
     display: block;
-    /* makes the items (the hamburger) display in a block */
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    /* Get rid of the 'underline' for the hyperlink */
     padding: .5rem .75rem;
     background-color: #fdf9d8;
-    /* give it a bit of grey background so it's clear the whole bar across teh screen could be clicked */
     color: #841617;
-    /* black so the 'hyperlink' isn't blue */
 }
 
 #menu::before {
-    /* used to insert the hamburger menu icon.  #menu text is empty until this */
     content: "≡";
 }
 
 #menu.show::before {
-    /* when toggled w/ js, it changes the content to an X icon. */
     content: "✕";
 }
 
 nav {
     grid-column: 1/-1;
-    /* make sure the nav element stretches the width instead of just 1 column */
-    /* I don't know why it's needed to apply to nav but wont work for .navigation */
 }
 
 .navigation {
     background: #fdf9d8;
-    /* black background for when menu is shown */
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -132,47 +122,37 @@ nav {
 
 .navigation li {
     display: none;
-    /* hides the nav elements when js toggles it */
 }
 
 .navigation a {
     color: #841617;
-    /* make sure the link text is white instead of blue default */
     text-decoration: none;
-    /* gets rid of underlines and such for hyperlinks */
-    font-family: "Comfortaa", Helvetica, sans-serif;
+    font-family: "Arial";
     display: block;
-    /* Displays the elements in a block */
     padding: 0.75rem;
     text-align: left;
-    /* forces text to left edge of screen */
     transition: 0.5s;
-    /* Set the transition time for the hover */
     font-size: clamp(1rem, 2vmin, 1.5rem);
-    /* set the font sizes */
 }
 
 .navigation a:hover,
 navigation a:active {
-    /* supposed to also highlight the active link that represents the active page - need to do something about this */
     color: #fdf9d8;
     background-color: gray;
-    /* Hover over gray color */
 }
 
 .show li {
     display: block;
-    /* displays the list when js toggles it */
 }
 
 .active::first-letter {
-    /* Using pseudo-element to apply an underline to the 1st letter of the active link */
+    /* Psuedo element */
     text-decoration: underline;
 }
 
 .active {
     background-color: #841617;
-    /* highlight active link.  active is defined in html as a class for the defined anchor */
+
 }
 
 /* END RESPONSIVE MENU */
