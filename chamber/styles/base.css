@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: Montserrat;
+}
+
+#header {
+    display: block;
+    padding: 10px;
+}
+
+header h1 {
+    margin-top: 40px;
+}
+
+header {
+    display: grid;
+    padding: .5rem;
+    grid-template-columns: auto 48px;
+    background: #fdf9d8;
+    color: #841617;
+}
+
+header button {
+    height: 48px;
+    width: 48px;
+    font-size: 2rem;
+    background-color: #666666
+}
+
+header img {
+    display: flex;
+    border-color: #841617;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    top: 100px;
+    left: 50px;
+    width: 100%;
+    height: auto;
+}
