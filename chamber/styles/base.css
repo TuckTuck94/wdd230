@@ -1,46 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Young+Serif&display=swap');
 
 body {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0;
+    font-family: 'Young Serif';
     background-color: gainsboro;
-    font-family: Montserrat;
+
 }
 
-#header {
+img {
     display: block;
-    padding: 10px;
+    margin: auto;
+    width: 50%;
+    align-items: center;
 }
 
-header h1 {
-    margin-top: 40px;
-}
 
+/*header css styles*/
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #841617;
+    font-family: 'Young Serif';
+    background-color: #fdf9d8;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.container {
     display: grid;
-    padding: .5rem;
-    grid-template-columns: auto 48px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.sub {
+    color: #841617;
+    letter-spacing: -0.08em;
+    padding: 0px;
+}
+
+.currentdate {
+
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.logoimg {
+    width: 150px;
+}
+
+/* Navigation Menu*/
+
+
+
+
+
+nav button {
     background: #fdf9d8;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.primaryNav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.primaryNav li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav a:hover {
+    background-color: #841617;
+    color: #fdf9d8;
+    --d: 75%;
+}
+
+nav ul {
+    background-color: #fdf9d8;
+}
+
+nav ul li a {
+
+    display: block;
+    color: #841617;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.5s;
+}
+
+
+main div {
+    margin: 1em;
+    padding: 1em;
+}
+
+.spot1,
+.spot2,
+.spot3 {
+
+    background-color: #fdf9d8;
+    margin: 1em;
+    padding: 1em;
+}
+
+.herojoin {
+    font-size: 1rem;
+    background-color: #fdf9d8;
+    color: #841617;
+    padding: 15px 5px;
+    border-radius: 2em;
+
+}
+
+.hero {
+    padding: 0px;
+}
+
+.heroimg {
+    height: auto;
+}
+
+.spot {
+    background-color: gainsboro;
+
+}
+
+
+.join {
+    background-color: #fdf9d8;
+    display: none;
+}
+
+.weather,
+.events,
+.news {
+    background-color: #fdf9d8;
+}
+
+/*Geading and Paragraph Styles*/
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'Young Serif';
+    margin: 5px;
+    padding: .3em;
+    border-radius: .5em;
+    text-align: center;
+}
+
+h1 {
+    color: #841617;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    color: #841617;
+    max-width: fit-content;
+}
+
+h3 {
+    font-size: 20px;
     color: #841617;
 }
 
-header button {
-    height: 48px;
-    width: 48px;
-    font-size: 2rem;
-    background-color: #666666
+p {
+    font-family: 'Poppins';
+    color: #666666;
+    font-size: 16px;
+    margin: 15px;
+    text-align: center;
 }
 
-header img {
-    display: flex;
-    border-color: #841617;
-    border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
-    top: 100px;
-    left: 50px;
-    width: 100%;
-    height: auto;
+footer {
+    color: #841617;
+    font-family: 'Poppins';
+    background-color: #fdf9d8;
+    padding: .5em;
+    text-align: center;
+    border-radius: .5em;
+
+}
+
+footer p {
+    color: #841617;
+    text-align: center;
+    font-family: 'Domine', serif;
+}
+
+.footlink {
+    text-decoration: none;
+    color: #841617;
+}
+
+hr {
+    color: #841617;
+}
+
+a {
+    color: #841617
 }

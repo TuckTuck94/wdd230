@@ -1,0 +1,90 @@
+/* Tablet Views */
+@media only screen and (min-width: 32.5rem) {
+
+
+    header img {
+        width: 80px;
+    }
+
+    .current-date {
+        font-size: .8em;
+        padding: .6em;
+    }
+
+
+
+    nav ul.open {
+        font-size: 1.4em;
+        margin: 0;
+    }
+
+    .primaryNav {
+        display: flex;
+    }
+
+    .primaryNav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    button {
+        display: none;
+    }
+
+    main div {
+        margin: .5em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .hero {
+        grid-column: 1/4;
+    }
+
+
+    .news {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .spot {
+        flex-direction: row;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .spot1 {
+        grid-column: 1;
+    }
+
+    .spot2 {
+        grid-column: 2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .join {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        display: block;
+    }
+
+    .events {
+        grid-column: 1/3;
+    }
+
+
+
+}
