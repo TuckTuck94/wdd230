@@ -1,26 +1,14 @@
-//Responsive Hamburger Menu
-function toggleMenu() {
-    document.getElementsByClassName('primaryNav')[0].classList.toggle('responsive');
+const options = { year: 'numeric' };
+document.getElementById("currentdate").innerHTML = new Date().getFullYear()
 
-}
+document.getElementById('lastModified').innerHTML = new Date(document.lastModified);
+
+/*HAMBURGER MENU*/
+const navMenu = document.querySelector('.navigation')
+const hamburger = document.querySelector('#menu');
 
 
-
-// Join Us Banner 
-let invite = "";
-if (days[date.getDay()] == 'Monday' || days[date.getDay()] == 'Tuesday') {
-    invite = "Join Us in the Chamber! ";
-} else {
-    invite = "";
-}
-document.querySelector('#banner').innerHTML = invite;
-
-// Current Date
-let full_date = days[date.getDay()] + ', ' + dayNumber + ' ' + month[date.getMonth()] + ' ' + date.getFullYear();
-document.querySelector('.currentdate').innerHTML = full_date;
-
-//Last Modified
-document.querySelector('#lm').innerHTML = `Last Modified: ${document.lastModified}`;
-
-//Copyright Year
-document.querySelector('#yr').innerHTML = year; 
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    hamburger.classList.toggle('show');
+});

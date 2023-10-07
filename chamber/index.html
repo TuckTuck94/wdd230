@@ -1,37 +1,39 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norman Chamber of Commerce - WDD230 Project</title>
-    <meta name="description" content="WDD 230 - Norman Chamber of Commerce">
+    <title>Michael Tucker - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Michael Allen Tucker, Course Assignment Portal.">
     <meta name="author" content="Michael Tucker">
 
     <!--Social Media HTML Code-->
-    <meta property="og:title" content="Norman Chamber of Commerce - WDD230">
+    <meta property="og:title" content="Michael Tucker Portal for WDD230">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tucktuck94.github.io/wdd230">
-    <meta property="og:image" content="images/downtown-norman-ok.jpg">
+    <meta property="og:image" content="images/normancampus.jpg">
 
     <!--CSS Styles-->
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!--Favicon-->
     <link rel="icon" href="images/favicon.ico">
+</head>
 
 <body>
+    </nav>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img class="logo" src="images/norman-chamber-logo.png" alt="norman chamber logo">
-                <section class="heading">
-                    <h1>Norman Chamber of Commerce</h1>
-                </section>
-    </header>
+        <img src="images/norman-chamber-logo.png" alt="Norman Chamber Logo">
+        <h1>Norman Chamber of Commerce</h1>
 
+
+    </header>
+    <a id="menu" href="#"></a>
     <nav>
         <ul class="navigation">
             <li><a href="discover.html">Discover</a></li>
@@ -39,7 +41,7 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-
+    </a>
     <main>
         <div class="hero">
             <img class="heroimg" src="images/downtown-norman-ok.jpg" alt="Downtown Norman, OK">
@@ -54,13 +56,13 @@
         </div>
         <div class="events">
             <h3>Oklahoma Football Schedule</h3>
-            <img src="images/boomer.png" alt="Oklahoma Sooner slogan">
+            <img class="sooners" src="images/boomer.png" alt="Oklahoma Sooner slogan">
             <p><b>September 2 vs Arkansas St - W - 73-0</b></p>
             <p><b>September 9 vs SMU - W - 28-11</b></p>
             <p><b>September 16 vs Tulsa- W - 66-17</b></p>
             <p><b>September 23 @ Cincinatti - W - 20-6</b></p>
             <p><b>September 30 vs Iowa State - W - 50-20</b></p>
-            <p><b>October 7 vs Texas - TBD</b></p>
+            <p><b>October 7 vs Texas - W - 34-30</b></p>
             <p><b>October 21 vs UCF - TBD</b></p>
             <p><b>October 28 @ Kansas - TBD</b></p>
             <p><b>November 4 @ Oklahoma State - TBD</b></p>
@@ -111,9 +113,8 @@
         <p>Phone: 405-867-5309</p>
         <a href="https://maps.app.goo.gl/WMNntLqPfc5zkn4UA">Map of Norman, OK</a>
         </div>
-        <p class="footlink">&copy;<span id="yr"></span> Norman Chamber of Commerce | Michael Tucker | WDD 230 Project
-        </p>
-        Last Modified: <span id="lastModified"></span>
+        <p>&copy;<span id="currentdate"></span>, Michael Tucker, Oklahoma, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/scripts.js"></script>
 

@@ -12,7 +12,7 @@ body {
 img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 75%;
     align-items: center;
 }
 
@@ -29,12 +29,6 @@ header {
     margin: 0 auto;
 }
 
-.container {
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
 
 .logo {
     display: flex;
@@ -48,75 +42,81 @@ header {
     padding: 0px;
 }
 
-.sub {
-    color: #841617;
-    letter-spacing: -0.08em;
-    padding: 0px;
-}
-
-.currentdate {
-
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-}
 
 .logoimg {
     width: 150px;
 }
 
-/* Navigation Menu*/
-
-
-
-
-
-nav button {
-    background: #fdf9d8;
-    border: none;
-    font-size: 1rem;
-
+/* NAVIGATION */
+#menu {
+    grid-column: 1/-1;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #fdf9d8;
+    color: #841617;
 }
 
-.primaryNav {
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "✕";
+}
+
+nav {
+    grid-column: 1/-1;
+}
+
+.navigation {
+    background: #fdf9d8;
     list-style: none;
-    text-align: center;
+    margin: 0 auto;
     padding: 0;
 }
 
-.primaryNav li {
+.navigation li {
     display: none;
 }
 
-.responsive li {
-    display: block;
-}
-
-nav a:hover {
-    background-color: #841617;
-    color: #fdf9d8;
-    --d: 75%;
-}
-
-nav ul {
-    background-color: #fdf9d8;
-}
-
-nav ul li a {
-
-    display: block;
+.navigation a {
     color: #841617;
-    padding: 0.75rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-family: "Arial";
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
     transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-
-main div {
-    margin: 1em;
-    padding: 1em;
+.navigation a:hover,
+.navigation a:active {
+    color: #fdf9d8;
+    background-color: gray;
 }
+
+.show li {
+    display: block;
+}
+
+.active::first-letter {
+    /* Psuedo element */
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #841617;
+
+}
+
+/* END RESPONSIVE MENU */
+
+
+
 
 .spot1,
 .spot2,
