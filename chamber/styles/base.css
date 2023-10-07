@@ -103,7 +103,7 @@ nav {
 .navigation a {
     color: #841617;
     text-decoration: none;
-    font-family: "Arial";
+    font-family: "Monserrat";
     display: block;
     padding: 0.75rem;
     text-align: left;
@@ -139,7 +139,9 @@ main div {
     padding: 1em;
 }
 
-.card1 .card2 .spot3 {
+.spot1,
+.spot2,
+.spot3 {
 
     background-color: #fdf9d8;
     margin: 1em;
@@ -160,17 +162,22 @@ main div {
 }
 
 .heroimg {
+    width: 100%;
     height: auto;
 }
 
-.card {
+.spot {
     background-color: gainsboro;
 
 }
 
+.spot3 {
+    display: none;
+
+}
 
 .join {
-    background-color: #fdf9d8;
+    background-color: #FDF9D8;
     display: none;
 }
 
@@ -178,9 +185,10 @@ main div {
 .events,
 .news {
     background-color: #fdf9d8;
+    color: #841617
 }
 
-/*Geading and Paragraph Styles*/
+/******* Headings & Paragraph */
 h1,
 h2,
 h3,
@@ -210,22 +218,20 @@ h3 {
     color: #841617;
 }
 
-h4 {
-    font-size: 15px;
-    color: #841617
-}
 
 p {
     font-family: 'Poppins';
-    color: #666666;
+    color: #841617;
     font-size: 16px;
     margin: 15px;
     text-align: center;
 }
 
+
+/********** Footer */
 footer {
     color: #841617;
-    font-family: 'Poppins';
+    font-family: 'Young Serif';
     background-color: #fdf9d8;
     padding: .5em;
     text-align: center;
@@ -236,7 +242,7 @@ footer {
 footer p {
     color: #841617;
     text-align: center;
-    font-family: 'Domine', serif;
+    font-family: 'Poppins';
 }
 
 .footlink {
