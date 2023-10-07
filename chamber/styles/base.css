@@ -12,7 +12,7 @@ body {
 img {
     display: block;
     margin: auto;
-    width: 75%;
+    width: 50%;
     align-items: center;
 }
 
@@ -29,6 +29,12 @@ header {
     margin: 0 auto;
 }
 
+.container {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
 .logo {
     display: flex;
@@ -42,6 +48,18 @@ header {
     padding: 0px;
 }
 
+.sub {
+    color: #841617;
+    letter-spacing: -0.08em;
+    padding: 0px;
+}
+
+.currentdate {
+
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
 
 .logoimg {
     width: 150px;
@@ -116,11 +134,12 @@ nav {
 /* END RESPONSIVE MENU */
 
 
+main div {
+    margin: 1em;
+    padding: 1em;
+}
 
-
-.spot1,
-.spot2,
-.spot3 {
+.card1 .card2 .spot3 {
 
     background-color: #fdf9d8;
     margin: 1em;
@@ -144,7 +163,7 @@ nav {
     height: auto;
 }
 
-.spot {
+.card {
     background-color: gainsboro;
 
 }
@@ -189,6 +208,11 @@ h2 {
 h3 {
     font-size: 20px;
     color: #841617;
+}
+
+h4 {
+    font-size: 15px;
+    color: #841617
 }
 
 p {
