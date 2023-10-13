@@ -11,7 +11,22 @@
         padding: .6em;
     }
 
+    .navigation {
+        display: flex;
+    }
 
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
 
     nav ul.open {
         font-size: 1.4em;
@@ -84,6 +99,8 @@
     .events {
         grid-column: 1/3;
     }
+
+
 
 
 
