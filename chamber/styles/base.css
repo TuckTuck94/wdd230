@@ -262,3 +262,12 @@ hr {
 a {
     color: #841617
 }
+
+/* Dark Mode Button*/
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}

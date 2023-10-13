@@ -12,3 +12,20 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
     hamburger.classList.toggle('show');
 });
+
+/*DARK MODE*/
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+    if (modeButton.textContent.includes("🕶️")) {
+        main.style.background = "#666";
+        main.style.header = "#666";
+        main.style.color = "#fff";
+        modeButton.textContent = "🔆";
+    } else {
+        main.style.background = "#eee";
+        main.style.color = "#000";
+        modeButton.textContent = "🕶️";
+    }
+});
