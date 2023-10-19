@@ -6,6 +6,20 @@ body {
     background: gainsboro
 }
 
+#temple_name {
+    position: absolute;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.797);
+    top: 20px;
+    left: 20px;
+    white-space: nowrap;
+}
+
+#temple {
+    position: relative;
+
+}
+
 header {
     background: #841617;
     color: #fdf9d8;
