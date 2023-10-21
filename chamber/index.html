@@ -47,7 +47,11 @@
     </a>
     <main>
         <div class="hero">
-            <img class="heroimg" src="images/downtown-norman-ok.jpg" alt="Downtown Norman, OK">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 900px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
             <a href="">
                 <h3 class=herojoin>Join Us!</h3>
             </a>
@@ -61,7 +65,7 @@
         </div>
         <div class="events">
             <h3>Oklahoma Football Schedule</h3>
-            <h4>6-0 Sooners! Keep it up!</h4>
+            <h4>7-0 Sooners! Keep it up!</h4>
             <img src="images/boomer.png" alt="Oklahoma Sooner slogan">
             <p><b>September 2 vs Arkansas St - W - 73-0</b></p>
             <p><b>September 9 vs SMU - W - 28-11</b></p>
@@ -69,7 +73,7 @@
             <p><b>September 23 @ Cincinatti - W - 20-6</b></p>
             <p><b>September 30 vs Iowa State - W - 50-20</b></p>
             <p><b>October 7 vs Texas - W - 34-30</b></p>
-            <p><b>October 21 vs UCF - TBD</b></p>
+            <p><b>October 21 vs UCF - W - 31-29</b></p>
             <p><b>October 28 @ Kansas - TBD</b></p>
             <p><b>November 4 @ Oklahoma State - TBD</b></p>
             <p><b>November 11 vs West Virginia - TBD</b></p>
@@ -78,10 +82,16 @@
 
         </div>
         <div class="weather">
-            <h3>Today's Weather</h3>
+            <h3>Weather</h3>
             <img src="images/clear-sky.png" alt="Representing Weather">
-            <h4>76°F</h4>
-            <h4>Partly Cloudy</h4>
+            <div id="wind-chill">
+                <input id="temperature" value="40"> °F /
+                <input id="windspeed" value="10"> mph 🌬
+                <p>Wind Chill:
+                    <span id="windchill">N/A</span> ❄
+                </p>
+            </div>
+            </section>
         </div>
         <div class="join">
             <a href="">

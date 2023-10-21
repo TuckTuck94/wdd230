@@ -16,6 +16,11 @@ img {
     align-items: center;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 
 /*header css styles*/
 header {
