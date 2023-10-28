@@ -5,6 +5,8 @@ body {
     margin: auto;
     padding: 0;
     font-family: 'Young Serif';
+    font-size: 16px;
+    line-height: 1.5em;
     background-color: gainsboro;
 
 }
@@ -92,6 +94,7 @@ header {
 
 nav {
     grid-column: 1/-1;
+
 }
 
 .navigation {
@@ -189,8 +192,10 @@ main div {
 .weather,
 .events,
 .news {
+    margin: 1em;
+    padding: 1em;
     background-color: #fdf9d8;
-    color: #841617
+    color: #841617;
 }
 
 /******* Headings & Paragraph */
@@ -237,6 +242,12 @@ p {
     text-align: center;
 }
 
+.stats {
+    font-family: 'Poppins';
+    color: #841617;
+    font-size: 16px;
+    margin: 15px;
+}
 
 /********** Footer */
 footer {
@@ -275,4 +286,34 @@ a {
     right: 1rem;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.figcaption {
+    color: #841617
+}
+
+/*DISCOVER*/
+#discover-sidebar article {
+    border: 3px solid #841617;
+    box-shadow: 0.4em 0.4em 0.7em #353535;
+    margin-bottom: 15px;
+}
+
+#discover-sidebar article h3 {
+    padding-top: 0;
+    margin: 0 0 0 7px;
+}
+
+.stats {
+    padding: 8px;
+}
+
+#discover-main img {
+    transition: 1s;
+    border: 3px solid #841617;
+    box-shadow: 0.4em 0.4em 0.7em #353535;
+}
+
+#discover-main img:hover {
+    transform: scale(1.01);
 }
