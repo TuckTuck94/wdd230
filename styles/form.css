@@ -1,0 +1,78 @@
+:root {
+    --main-color: #841617;
+    --accent-color: #666666;
+    --text-color: #fdf9d8;
+
+    --text-font: Arial;
+    --title-font: Helvetica;
+
+    --input-radius: 7px;
+}
+
+div {
+    margin: 2rem;
+    border-style: solid;
+    border-color: var(--main-color);
+    border-radius: 1rem;
+    align-items: center;
+}
+
+form {
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    color: var(--main-color);
+    font-family: var(--title-font);
+    font-weight: bold;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+label>p {
+    display: inline;
+}
+
+input {
+    display: block;
+    font-family: var(--text-font);
+    font-size: 0.8rem;
+    padding: 0.7rem 0.5rem;
+    width: 89%;
+    max-width: 20rem;
+    border-color: var(--main-color);
+    border-radius: var(--input-radius);
+}
+
+input:focus {
+    outline-color: var(--accent-color);
+}
+
+button {
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--input-radius);
+    width: 100%;
+    max-width: 15rem;
+}
+
+footer {
+    text-align: center;
+}
+
+/** record page **/
+h1 {
+    background-color: var(--main-color);
+    margin: 5rem;
+    padding: 2rem;
+    border-style: solid;
+    border-color: var(--main-color);
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
