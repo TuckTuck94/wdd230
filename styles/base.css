@@ -74,7 +74,7 @@ main ul li {
     list-style-type: none;
 }
 
-.card {
+.card .card2 {
     outline: 1px solid ghostwhite;
     background-color: #fdf9d8;
     border-radius: 5px;
@@ -82,7 +82,7 @@ main ul li {
     font-size: 1.5em;
 }
 
-.card div {
+.card div .card2 div {
     text-align: center;
     padding: 1rem;
 }
