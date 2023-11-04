@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Tucker - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Michael Allen Tucker, Course Assignment Portal.">
+    <meta name="author" content="Michael Tucker">
+
+    <!--Social Media HTML Code-->
+    <meta property="og:title" content="Michael Tucker Portal for WDD230">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tucktuck94.github.io/wdd230">
+    <meta property="og:image" content="images/normancampus.jpg">
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    </nav>
+    <header>
+        <div id="mode">
+            🕶️
+        </div>
+        <img src="images/norman-chamber-logo.png" alt="Norman Chamber Logo">
+        <h1>Norman Chamber of Commerce</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Chamber</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    </a>
+    <main class="joinMain">
+        <div class="formSection" id="form">
+            <form method="get" action="thankyou.html">
+                <h2>Application to Join the Chamber</h2>
+                <fieldset class="">
+                    <legend>Applicant Information</legend>
+                    <label class="formHead">Applicant Information</label>
+                    <label class="top">First Name: <input type="text" name="fname" id="fname" placeholder="Jane or John"
+                            required></label>
+                    <label class="top">Last Name: <input type="text" name="lname" id="lname" placeholder="Doe"
+                            required></label>
+                    <label class="top">Title: <input type="text" name="title" id="position" pattern="[a-zA-z]{7,}"
+                            placeholder="7 characters minimum"></label>
+                    <label class="top">Email: <input type="email" name="email" id="email"
+                            placeholder="example@domain.com" required></label>
+                    <label class="top">Cell Number: <input type="tel" name="phone" id="phone"
+                            placeholder="1231231234"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="formHead">Business Information</label>
+                    <label class="top">Business/Organization Name <input type="text" name="company" id="company"
+                            required></label>
+                    <label class="top">Business/Organization Description <input type="text" name="description"
+                            id="coDescription"></label>
+                    <div>
+                        <label class="levels">Membership Level</label>
+                        <label class="side"><input type="radio" name="level" value="Non-Profit"> Non-Profit</label>
+                        <label class="side"><input type="radio" name="level" value="Bronze"> Bronze</label>
+                        <label class="side"><input type="radio" name="level" value="Silver"> Silver</label>
+                        <label class="side"><input type="radio" name="level" value="Gold"> Gold</label>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Join the Club" class="submitButton">
+            </form>
+        </div>
+        <div class="benefitSection" id="memBenefits">
+            <h2>Explanation of Member Benefits</h2>
+            <section class="benefits" id="npBenefits">
+                <h3>Non-Profit Membership</h3>
+                <div class="mini">
+                    <h5>Membership Dues</h5>
+                    <p>Free</p>
+                </div>
+                <div class="mini">
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Booth Reservation at Local Events</li>
+                        <li>10% Discount from Other Chamber Businesses</li>
+                        <li>Customer Referrals</li>
+                        <li>Appearance in Newsletter</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="benefits" id="bronzeBenefits">
+                <h3>Bronze Membership</h3>
+                <div class="mini">
+                    <h5>Membership Dues</h5>
+                    <p>$50 yearly</p>
+                </div>
+                <div class="mini">
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Booth Reservation at Local Events</li>
+                        <li>15% Discount from Other Chamber Businesses</li>
+                        <li>Customer Referrals</li>
+                        <li>Appearance in Newsletter</li>
+                        <li>Bi-Monthly Advertisement in Local Newspaper</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="benefits" id="silverBenefits">
+                <h3>Silver Membership</h3>
+                <div class="mini">
+                    <h5>Membership Dues</h5>
+                    <p>$125 yearly</p>
+                </div>
+                <div class="mini">
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Booth Reservation at Local Events</li>
+                        <li>20% Discount from Other Chamber Businesses</li>
+                        <li>Customer Referrals</li>
+                        <li>Appearance in Newsletter</li>
+                        <li>Monthly Advertisement in Local Newspaper</li>
+                        <li>Access to Special Events</li>
+                        <li>Invitation to Monthly Lunch Meeting</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="benefits" id="goldBenefits">
+                <h3>Gold Membership</h3>
+                <div class="mini">
+                    <h5>Membership Dues</h5>
+                    <p>$300 yearly</p>
+                </div>
+                <div class="mini">
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Booth Reservation at Local Events</li>
+                        <li>35% Discount from Other Chamber Businesses</li>
+                        <li>Customer Referrals</li>
+                        <li>Appearance in Newsletter</li>
+                        <li>Weekly Advertisement in Local Newspaper</li>
+                        <li>Access to Special Events</li>
+                        <li>Invitation to Monthly Lunch Meeting</li>
+                        <li>Tickets to the State Annual Business Symposium</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+
+        <h3>Norman Chamber of Commerce</h3>
+        <p> Address: 115 E. Gray Street</p>
+        <p>Phone: 405-867-5309</p>
+        <a href="https://maps.app.goo.gl/WMNntLqPfc5zkn4UA">Map of Norman, OK</a>
+        </div>
+        <p>&copy;<span id="currentdate"></span>, Michael Tucker, Oklahoma, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>
+
+</main>
+</body>

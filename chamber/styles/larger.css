@@ -100,7 +100,17 @@
         grid-column: 1/3;
     }
 
+    .joinMain {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .formSection {
+        grid-column: 1/2;
+    }
+
+    .benefitSection {
+        grid-column: 2/3;
+    }
 
 
 
