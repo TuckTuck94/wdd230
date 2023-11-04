@@ -58,3 +58,28 @@ function calculateWindChill(temp, wspeed) {
     const windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wspeed, 0.16) + 0.4275 * temp * Math.pow(wspeed, 0.16);
     return windChill;
 }
+
+const form = document.querySelector("#form");
+
+form.addEventListener("submit", function (event) {
+    // Prevent the default form submission behavior.
+    event.preventDefault();
+
+    // Get the form data.
+
+
+    const formData = new FormData(form);
+
+    // Submit the form data to the server.
+    fetch("thankyou.html", {
+        method: "POST",
+        body: formData,
+    })
+        .then(response => response.json())
+        .then(data => {
+
+
+        })
+        .catch(error => {
+        });
+});
