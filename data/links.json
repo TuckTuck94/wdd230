@@ -1,0 +1,126 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "lesson1/media-query.html",
+                    "title": "Media Query Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Web Design Principles Assignment"
+                },
+                {
+                    "url": "week02/design-principles.html",
+                    "title": "Design Principles Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "week03/images/combinators.html",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://codepen.io/tucktuck94/pen/jOXxKXv",
+                    "title": "Psuedo Elements"
+                },
+                {
+                    "url": "https://codepen.io/tucktuck94/pen/eYbrGpj",
+                    "title": "Responsive Navigation"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/tucktuck94/pen/bGOxZNg",
+                    "title": "CSS Pseudo Elements"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "week05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "week07/lazyload.html",
+                    "title": "Lazy Loading"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "week08/tablebuild.html",
+                    "title": "Table Build Activity"
+                },
+                {
+                    "url": "week08/form-start/index.html",
+                    "title": "Form Example"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "week09/new-ward-members.json",
+                    "title": "JSON Activity"
+                },
+                {
+                    "url": "week09/prophets.html",
+                    "title": "Prophets API"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "week10/lesson10.html",
+                    "title": "Lesson 10 Assignment"
+                }
+            ]
+        }
+    ]
+}
