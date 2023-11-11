@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Apple Tree Chocolate",
+            "address": "209 East Main Street, Norman, OK, 73069",
+            "phone": "(405) 310-3959",
+            "url": "appletreechocolate.com",
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_2318,w_3002,x_0,y_0/c_limit,h_100,w_250/f_auto/q_auto:best/v1605627301/tenants/5a44affd-ed73-44bc-91e6-5a44bda2d691/1405ef1781ba416a898dfc22b13ad4d7/Apple-tree-logo.jpg",
+            "membershipLvl": "Silver"
+        },
+        {
+            "name": "Gilliam Music",
+            "address": "2280 West Main Street, Norman, OK, 73069",
+            "phone": "(405) 321-0080",
+            "url": "edmondmusic.com",
+            "logo": "https://cdn11.bigcommerce.com/s-af09k78diz/images/stencil/250x100/brand_consistency_250_100_px_1678464677__33578.original.png",
+            "membershipLvl": "Bronze"
+        },
+        {
+            "name": "Weitzenhoffer Family College of Fine Arts",
+            "address": "520 Parrington Oval, Norman, OK, 73019",
+            "phone": "(405) 325-7370",
+            "url": "https://www.ou.edu/finearts",
+            "logo": "https://www.ou.edu/finearts/_jcr_content/headeripar/image.img.png/1607460767558.png",
+            "membershipLvl": "Silver"
+        },
+        {
+            "name": "Armstrong Bank",
+            "address": "401 West Main Street, Norman, OK, 73069",
+            "phone": "(405) 366-2756",
+            "url": "armstrong.bank",
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_1247,w_1440,x_0,y_0/c_limit,h_100,w_250/f_auto/q_auto:best/v1660573217/tenants/5a44affd-ed73-44bc-91e6-5a44bda2d691/1b955b9743b94aee9e111780ce37d43f/Armstrong-Bank-2022-VERTICAL-COLOR.png",
+            "membershipLvl": "Bronze"
+        },
+        {
+            "name": "Bob Moore Nissan",
+            "address": "3901 Journey Parkway, Norman, OK, 73072",
+            "phone": "(405) 217-7000",
+            "url": "bobmooorenissan.com",
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_46,w_126,x_0,y_0/v1605629002/tenants/5a44affd-ed73-44bc-91e6-5a44bda2d691/4a83b7ebfb4746c98d770d3877bfab01/Bob-Moore-Nissan-web.jpg",
+            "membershipLvl": "Gold"
+        },
+        {
+            "name": "Confidence Ford",
+            "address": "825 North Interstate Drive, Norman, OK, 73069",
+            "phone": "(405) 321-2411",
+            "url": "confidenceford.com",
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_174,w_342,x_0,y_0/c_limit,h_100,w_250/f_auto/q_auto:best/v1654527372/tenants/5a44affd-ed73-44bc-91e6-5a44bda2d691/a1c399ac9bb34a2f94cc26a9c3769405/ford.png",
+            "membershipLvl": "Silver"
+        },
+        {
+            "name": "HeyDay Entertainment",
+            "address": "3201 Market Place, Norman, OK, 73072",
+            "phone": "(405) 310-3500",
+            "url": "heydayfun.com",
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_280,w_800,x_0,y_0/c_limit,h_100,w_250/f_auto/q_auto:best/v1648150088/tenants/5a44affd-ed73-44bc-91e6-5a44bda2d691/d6e3e8261c3a40dd846f9c862b3fddb1/Hey-Day.png",
+            "membershipLvl": "Gold"
+        }
+    ]
+}
