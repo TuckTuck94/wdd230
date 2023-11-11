@@ -554,7 +554,7 @@ ul {
     grid-row: 2/3;
     padding: 1rem 0 0 0;
     text-align: center;
-    color: var(--main-color-text);
+    color: #841617;
 }
 
 .viewmenu {
@@ -571,10 +571,10 @@ ul {
     padding: 7.5px;
     width: 44px;
     height: 44px;
-    border: solid .2rem var(--page-background);
+    border: solid .2rem #641213;
     border-radius: var(--border-radius);
-    color: var(--text-on-dark);
-    background-color: var(--main-color-background);
+    color: #FDF9D8;
+    background-color: #841617;
 }
 
 .viewmenu button:hover {
@@ -599,12 +599,10 @@ ul {
     justify-content: center;
     margin: .1rem 0;
     padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-    transition: var(--transition-time);
 }
 
 .directory-list .member-card:nth-child(odd) {
-    background-color: var(--main-color-background);
+    background-color: #841617;
 }
 
 .directory-list .m-name {
@@ -613,8 +611,7 @@ ul {
     line-height: 1.5rem;
     text-align: left;
     font-size: 1.2rem;
-    color: var(--ffffff-text);
-    transition: var(--transition-time);
+
 }
 
 .directory-list .m-logo {
@@ -650,7 +647,7 @@ ul {
 
 .directory-list .m-url:hover {
     font-weight: bold;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: #666666);
 }
 
 /* DIRECTORY GRID */
@@ -659,7 +656,7 @@ ul {
     grid-row: 4/5;
     padding: 1rem;
     border-radius: var(--border-radius);
-    background-color: var(--secondary-color-background);
+    background-color: #841617;
 }
 
 .directory-grid .member-card {
