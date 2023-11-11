@@ -484,7 +484,7 @@ ul {
     width: auto;
     height: 60px;
     border-radius: 0;
-    border: 1px solid var(--accent3-color);
+    border: 1px solid #841617;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0.2rem;
@@ -503,7 +503,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
     padding: 0.5rem;
-    border: 1px solid var(--accent3-color);
+    border: 1px solid #841617;
     border-radius: 0;
 }
 
@@ -518,12 +518,12 @@ ul {
 }
 
 .list section:nth-child(odd) {
-    background-color: var(--accent2-color);
-    color: white;
+    background-color: #841617;
+    color: #666666;
 }
 
 .list section:nth-child(odd) a {
-    color: white;
+    color: #666666;
 }
 
 .list section:nth-child(even) a {
@@ -572,7 +572,6 @@ ul {
     width: 44px;
     height: 44px;
     border: solid .2rem #641213;
-    border-radius: var(--border-radius);
     color: #FDF9D8;
     background-color: #841617;
 }
@@ -617,10 +616,8 @@ ul {
 .directory-list .m-logo {
     display: none;
     margin: .5rem auto;
-    border-radius: var(--border-radius);
     max-height: 120px;
     max-width: 250px;
-    transition: var(--transition-time);
 }
 
 .directory-list .m-address {
@@ -631,23 +628,22 @@ ul {
 .directory-list .m-phone {
     line-height: 1.5rem;
     text-align: left;
-    transition: var(--transition-time);
 }
 
 .directory-list .m-phone:hover {
     font-weight: bold;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: #fdf9d8
 }
 
 .directory-list .m-url {
     line-height: 1.5rem;
     text-align: left;
-    transition: var(--transition-time);
+
 }
 
 .directory-list .m-url:hover {
     font-weight: bold;
-    text-decoration-color: #666666);
+    text-decoration-color: #666666;
 }
 
 /* DIRECTORY GRID */
@@ -655,7 +651,6 @@ ul {
     grid-column: 2/3;
     grid-row: 4/5;
     padding: 1rem;
-    border-radius: var(--border-radius);
     background-color: #841617;
 }
 
@@ -666,31 +661,25 @@ ul {
     justify-content: center;
     margin: .5rem;
     padding: 1.5rem;
-    border: solid .2rem var(--secondary-color-background);
-    border-radius: var(--border-radius);
-    background-color: var(--ffffff-background);
-    transition: var(--transition-time);
+    border: solid .2rem #641213;
+    background-color: #353535;
 }
 
 .directory-grid .m-name {
     display: none;
     margin: 1rem;
     text-align: center;
-    color: var(--text-on-white);
-    transition: var(--transition-time);
 }
 
 .directory-grid .m-logo {
     margin: .5rem auto;
-    border-radius: var(--border-radius);
     max-height: 120px;
     max-width: 250px;
-    transition: var(--transition-time);
 }
 
 .directory-grid .member-card:nth-child(6) .m-logo {
     padding: .2rem 0;
-    background-color: #E97601;
+    background-color: #841617;
 }
 
 .directory-grid .m-address {
@@ -707,15 +696,14 @@ ul {
 }
 
 .directory-grid .m-phone:hover {
-    color: var(--secondary-color-text);
+    color: #841617;
     font-weight: bold;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: #666666;
 }
 
 .directory-grid .m-url {
     margin-top: .5rem;
-    color: var(--text-on-white);
-    transition: var(--transition-time);
+
 }
 
 .directory-grid .m-url:hover {
