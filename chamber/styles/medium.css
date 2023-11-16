@@ -1,0 +1,82 @@
+ /* Page 3 Directory */
+ .directory-main {
+     grid-template-columns: 1fr;
+     gap: 1rem 1rem;
+     max-width: 800px;
+     min-width: 500px;
+ }
+
+ .directory-main h1 {
+     grid-column: 1/2;
+     grid-row: 2/3;
+ }
+
+ .viewmenu {
+     grid-column: 1/2;
+     grid-row: 3/4;
+ }
+
+ .viewmenu button:hover {
+     box-shadow: 0 0 0 .2rem var(--accent-color);
+ }
+
+ /* GRID VIEW */
+ .directory-grid {
+     grid-column: 1/2;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ }
+
+ .directory-grid .member-card {
+     margin: .5rem;
+ }
+
+ .directory-grid .member-card:hover {
+     box-shadow: 0 0 0 .2rem var(--accent-color);
+ }
+
+ .directory-grid .member-card:hover .m-logo {
+     transform: scale(1.1) translateY(-10%);
+ }
+
+ .directory-grid .member-card:hover .m-address {
+     transform: scale(1.1) translateY(-5%);
+ }
+
+ .directory-grid .member-card:hover .m-phone {
+     transform: scale(1.1) translateY(5%);
+ }
+
+ .directory-grid .member-card:hover .m-url {
+     transform: scale(1.1) translateY(10%);
+ }
+
+ /* LIST VIEW */
+ .directory-list {
+     grid-column: 1/2;
+ }
+
+ .directory-list .member-card {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .directory-list .m-name {
+     width: 100%;
+ }
+
+ .directory-list .m-address {
+     width: 150px;
+ }
+
+ .directory-list .m-phone {
+     min-width: 140px;
+ }
+
+ .directory-list .m-url {
+     min-width: 190px;
+ }
+ }
