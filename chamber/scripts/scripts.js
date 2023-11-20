@@ -31,32 +31,100 @@ modeButton.addEventListener("click", () => {
 });
 
 /*WEATHER*/
-!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-/*WIND CHILL*/
-const tempInput = document.getElementById('temperature');
-tempInput.addEventListener("keyup", getUpdate);
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const weatherDesc = document.querySelector('#weather-description');
+const threeDayFor = document.querySelector('#forecast');
 
-const wspeedInput = document.getElementById('windspeed');
-wspeedInput.addEventListener("keyup", getUpdate);
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=35.22&lon=-97.43&units=imperial&appid=6973a4b17cded0bc4a99143605f5a7e7';
+const forecasturl = 'https://api.openweathermap.org/data/2.5/forecast?lat=35.22&lon=-97.43&units=imperial&appid=6973a4b17cded0bc4a99143605f5a7e7';
 
-getUpdate();
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  };
+  try {
+    const response = await fetch(forecasturl);
+    if (response.ok) {
+      const data = await response.json();
+      displayForecast(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  };
+};
 
-function getUpdate() {
-  const temp = parseInt(document.getElementById('temperature').value);
-  const wspeed = parseFloat(document.getElementById('windspeed').value);
+apiFetch();
 
-  if (temp <= 50 && wspeed > 3.0) {
-    const windChill = calculateWindChill(temp, wspeed)
-    document.getElementById('windchill').textContent = windChill.toFixed(2) + " °F";
-  } else {
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
 
-    document.getElementById('windchill').textContent = "n/a";
-  }
+  weatherDesc.textContent = `${desc}`;
 }
 
-function calculateWindChill(temp, wspeed) {
-  const windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wspeed, 0.16) + 0.4275 * temp * Math.pow(wspeed, 0.16);
-  return windChill;
+function displayForecast(data) {
+  const currentDate = new Date();
+  const headers = document.createElement('div');
+  for (let i = 1; i <= 3; i++) {
+    const today = document.createElement('h3');
+    today.textContent = dayOfWeek(currentDate.getDay() + i);
+    headers.appendChild(today);
+  }
+
+  const temperatures = document.createElement('div');
+  data.list.forEach((day) => {
+    switch (day.dt_txt) {
+      default:
+        break;
+      case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 1} 12:00:00`:
+      case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 2} 12:00:00`:
+      case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 3} 12:00:00`:
+
+        const todaytemp = document.createElement('p');
+
+        todaytemp.innerHTML = `${day.main.temp} &deg;F`;
+        temperatures.appendChild(todaytemp);
+    }
+
+  });
+  threeDayFor.appendChild(headers);
+  threeDayFor.appendChild(temperatures);
+}
+
+function dayOfWeek(day) {
+  switch (day) {
+
+    case 0:
+      return 'Sunday';
+    case 1:
+      return 'Monday';
+    case 2:
+      return 'Tuesday';
+    case 3:
+      return 'Wednesday';
+    case 4:
+      return 'Thursday';
+    case 5:
+      return 'Friday';
+    case 6:
+      return 'Saturday';
+    default:
+      return 'Error';
+  }
 }
 
 const form = document.querySelector("#form");
