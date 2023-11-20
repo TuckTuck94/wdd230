@@ -637,3 +637,32 @@ ul {
     font-weight: bold;
     text-decoration-color: #fdf9d8;
 }
+
+/* Banner */
+
+#banner {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: .5rem 1rem;
+    background-color: #FDF9D8;
+    border: 2px solid #841617;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-size: .85rem;
+}
+
+#banner button {
+    float: right;
+    color: #666666;
+    border: none;
+    background-color: transparent;
+}
+
+.banner-show {
+    display: block;
+}
+
+.banner-hide {
+    display: none;
+}
