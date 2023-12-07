@@ -38,11 +38,11 @@ function loadJSON() {
             rentalTypeList = jsonObject.rentalTypeList;
             let divCatalogue = document.querySelector('div.catalogue');
 
+            divInventory = document.querySelector('div.inventory');
 
             for (let i = 0; i < rentalTypeList.length; i++) {
 
 
-                divInventory = document.querySelector('div.inventory');
 
                 let divImage = document.createElement("div");
                 divImage.className = "inventory-image";
@@ -50,8 +50,8 @@ function loadJSON() {
                 let figure = document.createElement("figure");
                 let img = document.createElement("img");
 
-                let iconsrc = './images/rentals-catalogue' + rentalTypeList[i].img + '.png';
-
+                let iconsrc = './images/rentals-catalogue/' + rentalTypeList[i].img + '.png';
+                console.log(iconsrc);
                 img.setAttribute('src', iconsrc);
                 img.setAttribute('alt', rentalTypeList[i].rentalType);
                 img.style.width = '16.4em';
