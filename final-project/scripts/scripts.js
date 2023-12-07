@@ -50,7 +50,7 @@ function loadJSON() {
                 let figure = document.createElement("figure");
                 let img = document.createElement("img");
 
-                let iconsrc = './data/images/rentals-catalogue' + rentalTypeList[i].img + '.png';
+                let iconsrc = './images/rentals-catalogue' + rentalTypeList[i].img + '.png';
 
                 img.setAttribute('src', iconsrc);
                 img.setAttribute('alt', rentalTypeList[i].rentalType);
