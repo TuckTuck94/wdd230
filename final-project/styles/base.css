@@ -238,8 +238,12 @@ input:valid {
 }
 
 .catalogue {
+  background-color: #137491;
+  color: #E9C46A;
   display: grid;
   grid-template-columns: 1fr;
+  margin: 1em;
+
   padding: 5px;
 }
 
@@ -288,6 +292,15 @@ input:valid {
 .General-Information {
   padding: 5px;
 }
+
+.agreement {
+  margin: 1em;
+  padding: 1em;
+  background-color: #137491;
+  color: #E9C46A;
+  text-align: center;
+}
+
 
 /* Footer style */
 footer {
