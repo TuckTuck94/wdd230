@@ -182,9 +182,10 @@ form {
   width: 75%;
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 1px solid #CCC;
+  border: 1px solid #2a9d8f;
   border-radius: 1em;
-  background-color: #f2f2f2;
+  background-color: #264653;
+  color: #e76f51;
   padding: 20px;
 }
 
@@ -235,6 +236,8 @@ input:valid {
 .confirmation {
   padding: 5em;
   text-align: center;
+  background-color: #137491;
+  color: #E9C46A
 }
 
 .catalogue {
