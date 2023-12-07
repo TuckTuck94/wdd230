@@ -51,127 +51,124 @@
         </ul>
     </nav>
 
-    <body>
-
-        <div class="ShowHide" id="Bar">
-            <div id="right">
-                <button onclick="Hide(Bar);">Close</button>
-            </div>
-            <div id="left">
-
-            </div>
+    <div class="ShowHide" id="Bar">
+        <div id="right">
+            <button onclick="Hide(Bar);">Close</button>
         </div>
+        <div id="left">
 
-        <main>
-            <div class="agreement">
-                <h3>Rental Agreement</h3>
-                <p>A $50 security deposit is required to confirm reservations.</p>
-                <p>A valid drivers license is required in hand at time of rental.</p>
-                <p>No one under 12 years of age are allowed to ride on the scooters.</p>
-                <p>Fuel charge not included.</p>
-                <p>Unlimited mileage.</p>
-                <p>Liability insurance is free of charge.</p>
-                <p>Reservations rate requires 24 hour prior notification.</p>
-                <p>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</p>
-                <p>Payment via Google Pay, cash, credit card, debit card, or PayPal.</p>
-                <p>Rentals may be returned to either location.</p>
-            </div>
-            <form action="confirmation.html" method="GET">
+        </div>
+    </div>
+
+    <main>
+        <div class="agreement">
+            <h3>Rental Agreement</h3>
+            <p>A $50 security deposit is required to confirm reservations.</p>
+            <p>A valid drivers license is required in hand at time of rental.</p>
+            <p>No one under 12 years of age are allowed to ride on the scooters.</p>
+            <p>Fuel charge not included.</p>
+            <p>Unlimited mileage.</p>
+            <p>Liability insurance is free of charge.</p>
+            <p>Reservations rate requires 24 hour prior notification.</p>
+            <p>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</p>
+            <p>Payment via Google Pay, cash, credit card, debit card, or PayPal.</p>
+            <p>Rentals may be returned to either location.</p>
+        </div>
+        <form action="confirmation.html" method="GET">
+
+            <fieldset>
+                <legend>Reservation Form</legend>
 
                 <fieldset>
-                    <legend>Reservation Form</legend>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:
+                        <input type="text" id="fullname" name="full_name" required pattern="[a-zA-Z\s]{2,}">
+                    </label>
 
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        <label for="fullname">Full Name:
-                            <input type="text" id="fullname" name="full_name" required pattern="[a-zA-Z\s]{2,}">
-                        </label>
+                    <label for="email">Email:
+                        <input type="email" id="email" name="user_email" placeholder="example@domain.com">
+                    </label>
 
-                        <label for="email">Email:
-                            <input type="email" id="email" name="user_email" placeholder="example@domain.com">
-                        </label>
+                    <label for="phonenumber">Phone Number:
+                        <input type="tel" id="phonenumber" name="phone_number" required>
+                    </label>
 
-                        <label for="phonenumber">Phone Number:
-                            <input type="tel" id="phonenumber" name="phone_number" required>
-                        </label>
-
-                        <label for="country">Country:
-                            <input type="text" id="country" name="country" required pattern="[a-zA-Z\s]{2,}">
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Reservation Information</legend>
-                        <label for="reservationdate">Reservation Date:
-                            <input type="date" id="reservationdate" name="reservation_date">
-                        </label>
-
-                        <fieldset>
-                            <legend>Date Range</legend>
-                            <label for="sincedate">Since Date:
-                                <input type="date" id="sincedate" name="since_date">
-                            </label>
-
-                            <label for="untildate">Until Date:
-                                <input type="date" id="untildate" name="until_date">
-                            </label>
-                        </fieldset>
-
-                        <label for="rentaltype">Rental Type:
-                            <input list="browsers" id="rentaltype" name="rental_type">
-                            <datalist id="browsers">
-                                <option value="Honda Metro">
-                                <option value="Honda Dio">
-                                <option value="PCX150">
-                                <option value="Pioneer ATV">
-                                <option value="Jeep Wranger - 4 Door">
-                                <option value="Jeep Wranger - 2 Door">
-                            </datalist>
-                        </label>
-
-                        <label class="flexly" for="rentalamount">Amount of People: &nbsp;&nbsp;&nbsp;
-                            <input type="range" id="rentalamount" value="5" min="1" max="10" step="1"
-                                list="rentalamountlist" oninput="adjustAmount(this.value)"
-                                onchange="adjustAmount(this.value)">
-                            <span id="amountvalue">5</span>
-
-                            <datalist id="rentalamountlist">
-                                <option value="0">
-                                <option value="1">
-                                <option value="2">
-                                <option value="3">
-                                <option value="4">
-                                <option value="5">
-                                <option value="6">
-                                <option value="7">
-                                <option value="8">
-                                <option value="9">
-                                <option value="10">
-                            </datalist>
-                        </label>
-
-                        <input type="submit" name="submitbuttom">
-                    </fieldset>
+                    <label for="country">Country:
+                        <input type="text" id="country" name="country" required pattern="[a-zA-Z\s]{2,}">
+                    </label>
                 </fieldset>
-            </form>
 
-        </main>
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label for="reservationdate">Reservation Date:
+                        <input type="date" id="reservationdate" name="reservation_date">
+                    </label>
 
-        <footer>
-            <p> &copy;
-                <script>currentYear(); wheaterData(20.51, -86.95);</script>
-                Michael Tucker | United States | <span id="currentdate"></span>
-            </p>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com"><img class="socialmediaicon" src="images/facebook.png"
-                        alt="facebook icon"></a>
-                <a href="https://www.youtube.com"><img class="socialmediaicon" src="images/youtube.png"
-                        alt="youtube icon"></a>
-                <a href="https://twitter.com"><img class="socialmediaicon" src="images/twitter.png"
-                        alt="twitter icon"></a>
-            </div>
-        </footer>
+                    <fieldset>
+                        <legend>Date Range</legend>
+                        <label for="sincedate">Since Date:
+                            <input type="date" id="sincedate" name="since_date">
+                        </label>
 
-    </body>
+                        <label for="untildate">Until Date:
+                            <input type="date" id="untildate" name="until_date">
+                        </label>
+                    </fieldset>
+
+                    <label for="rentaltype">Rental Type:
+                        <input list="browsers" id="rentaltype" name="rental_type">
+                        <datalist id="browsers">
+                            <option value="Honda Metro">
+                            <option value="Honda Dio">
+                            <option value="PCX150">
+                            <option value="Pioneer ATV">
+                            <option value="Jeep Wranger - 4 Door">
+                            <option value="Jeep Wranger - 2 Door">
+                        </datalist>
+                    </label>
+
+                    <label class="flexly" for="rentalamount">Amount of People: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rentalamount" value="5" min="1" max="10" step="1"
+                            list="rentalamountlist" oninput="adjustAmount(this.value)"
+                            onchange="adjustAmount(this.value)">
+                        <span id="amountvalue">5</span>
+
+                        <datalist id="rentalamountlist">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </label>
+
+                    <input type="submit" name="submitbuttom">
+                </fieldset>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p> &copy;
+            <script>currentYear(); wheaterData(20.51, -86.95);</script>
+            Michael Tucker | United States | <span id="currentdate"></span>
+        </p>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com"><img class="socialmediaicon" src="images/facebook.png"
+                    alt="facebook icon"></a>
+            <a href="https://www.youtube.com"><img class="socialmediaicon" src="images/youtube.png"
+                    alt="youtube icon"></a>
+            <a href="https://twitter.com"><img class="socialmediaicon" src="images/twitter.png" alt="twitter icon"></a>
+        </div>
+    </footer>
+
+</body>
 
 </html>
