@@ -7,7 +7,7 @@
             "reservationFullDay": "$30",
             "walkInHalfDay": "$25",
             "walkInFullDay": "$35",
-            "img": "hondametro"
+            "img": "hondametro.png"
         },
         {
             "rentalType": "Honda Dio",
@@ -16,7 +16,7 @@
             "reservationFullDay": "$40",
             "walkInHalfDay": "$35",
             "walkInFullDay": "$45",
-            "img": "hondadio"
+            "img": "hondadio.png"
         },
         {
             "rentalType": "Honda PCX150",
@@ -25,7 +25,7 @@
             "reservationFullDay": "$50",
             "walkInHalfDay": "$45",
             "walkInFullDay": "$55",
-            "img": "hondapcx150"
+            "img": "hondapcx150.png"
         },
         {
             "rentalType": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
             "reservationFullDay": "$70",
             "walkInHalfDay": "$60",
             "walkInFullDay": "$80",
-            "img": "hondapioneeratv"
+            "img": "hondapioneeratv.png"
         },
         {
             "rentalType": "Jeep Wrangler - 4 door",
@@ -43,7 +43,7 @@
             "reservationFullDay": "$100",
             "walkInHalfDay": "$85",
             "walkInFullDay": "$125",
-            "img": "jeepwrangler4"
+            "img": "jeepwrangler4.png"
         },
         {
             "rentalType": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
             "reservationFullDay": "$85",
             "walkInHalfDay": "$70",
             "walkInFullDay": "$90",
-            "img": "jeepwrangler2"
+            "img": "jeepwrangler2.png"
         }
     ]
 }
