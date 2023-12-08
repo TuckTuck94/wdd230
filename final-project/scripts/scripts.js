@@ -37,6 +37,7 @@ function loadJSON() {
 
             rentalTypeList = jsonObject.rentalTypeList;
             let divCatalogue = document.querySelector('div.catalogue');
+            divCatalogue.innerHTML = '';
 
             divInventory = document.querySelector('div.inventory');
 
