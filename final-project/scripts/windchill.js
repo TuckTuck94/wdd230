@@ -53,20 +53,6 @@ function wheaterData(town, lat = 20.51, lon = -86.95) {
         document.querySelector("div.dayforecast").appendChild(forecastCard);
       }
     });
-
-  fetch(alerts)
-    .then((response) => response.json())
-    .then((jsonObject) => {
-      console.log(jsonObject);
-      console.log(jsonObject.alerts);
-
-      if (jsonObject.alerts !== undefined) {
-        document.getElementById("Bar").style.display = "block";
-        document.getElementById("left").innerHTML = jsonObject.alerts[0].description;
-      } else {
-        Hide(document.getElementById("Bar"));
-      }
-    });
 }
 
 function Hide(hideId) {
